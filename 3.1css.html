@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            background-color: rgb(124, 163, 163);
+}
+.ryadone {
+    text-align: center;
+    background: #4f8c9d;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #6eaae9;
+}
+.ryadone h1 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.menu {
+    background: #55d2f8;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background: #bfecfb;
+}
+.left {
+    float: left;
+    width: 25%;
+    background: #f0f0f0;
+    padding: 15px;
+    box-sizing: border-box; /*25%*/
+    border: 1px solid #ddd;
+    margin: 10px;
+    
+}
+.right {
+    float: right;
+    width: 25%;
+    background: #f0f0f0;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    margin: 10px;
+    
+}
+.center {
+    margin: 10px;
+    overflow: hidden;
+    background: #e6f3ff;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    min-height: 400px;
+    
+}
+.kolonki::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.kartochki {
+    overflow: hidden;
+    justify-content: center;
+    margin: 20px;
+}
+.kartochka {
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 5px;
+}
+.karticon {
+    display: block;
+    margin-top: 20px;
+   
+    
+}
+.karticon img {
+    width: 40px;
+    height: 40px;
+
+}
+.kartname {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+}
+.text {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    transition: left 0.3s; /* анимация*/
+    font-size: 12px;
+    font-weight: bold;
+}
+.kartochka:hover .text {
+    left: 0;
+}
+ .kartochki::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="ryadone">
+    <h1>INSTRUCTIONAL DESIGN</h1>
+</div>
+<div class="menu">
+    <a href="" >ГЛАВНАЯ</a>
+    <a href="">Новости</a>
+    <a href="">отдел ПРОДАЖ</a>
+    <a href="">ПОСТАВЩИКИ</a>
+    <a href="">о НАС</a>
+</div>
+
+<div class="kolonki">
+        
+        <div class="left">
+            <h3>Новости</h3>
+            <p><strong>Lorem ipsum dolor sit amet</strong> — consectetur adipiscing elit. Iste accusamus rerum omnis adipisci corporis est possimus dolor sit vero.</p>
+            <p><strong>Новый релиз</strong> — улучшенная платформа для веб-разработки уже доступна.</p>
+            <p><strong>Вебинар по CSS</strong> — 15 апреля, онлайн-встреча по позиционированию элементов.</p>
+            <hr>
+            <h3>Контакты</h3>
+            <p>Адрес: г. Москва, ул. Академика Королева 12</p>
+            <p>Телефон: 8-999-999-99-99</p>
+            <p>Email: info@designlab.ru</p>
+        </div>
+
+       
+        <div class="right">
+            <h3>Услуги</h3>
+            <p>Разработка дизайна</p>
+            <p>Разработка web-приложений</p>
+            <p>Разработка web-сервисов</p>
+            <p>Мобильная адаптация</p>
+            <p>Оптимизация производительности</p>
+        </div>
+
+        
+        <div class="center">
+            
+            <div class="kartochki">
+               
+                <div class="kartochka">
+                    <span class="karticon"><img src="твит.jpg" alt="twitter"></span>
+                    <span class="kartname">Twitter</span>
+                    <div class="text">Twitter</div>
+                </div>
+
+                
+                <div class="kartochka">
+                    <span class="karticon"><img src="ват.jpg" alt="whatsapp"></span>
+                    <span class="kartname">WhatsApp</span>
+                    <div class="text">WhatsApp</div>
+                </div>
+
+                
+                <div class="kartochka">
+                    <span class="karticon"><img src="тг.jpg" alt="telegram"></span>
+                    <span class="kartname">Telegram</span>
+                    <div class="text">Telegram</div>
+                </div>
+
+                
+                <div class="kartochka">
+                    <span class="karticon"><img src="вк.jpg" alt="vkontakte"></span>
+                    <span class="kartname">ВКонтакте</span>
+                    <div class="text">ВКонтакте</div>
+                </div>
+
+                
+                <div class="kartochka">
+                    <span class="karticon"><img src="инст.jpg" alt="instagram"></span>
+                    <span class="kartname">Instagram</span>
+                    <div class="text">Instagram</div>
+                </div>
+
+                
+                <div class="kartochka">
+                    <span class="karticon"><img src="пин.jpg" alt="pinterest"></span>
+                    <span class="kartname">Pinterest</span>
+                    <div class="text">Pinterest</div>
+                </div>
+
+               
+                <div class="kartochka">
+                    <span class="karticon"><img src="саф.jpg" alt="safari"></span>
+                    <span class="kartname">Safari</span>
+                    <div class="text">Safari</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
