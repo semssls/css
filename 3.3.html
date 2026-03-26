@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вертикальное меню (раздвигание родителя)</title>
+    <style>
+       
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+       
+        .menu {
+            list-style: none;     
+            padding: 0;          
+            margin: 0;           
+            width: 250px;         
+        }
+
+        
+        .menu li {
+            background: linear-gradient(to bottom, #d0d0d0, #b0b0b0);  
+            border-bottom: 1px solid #999;  
+            font-weight: bold;              
+        }
+
+        
+        .menu li a {
+            display: block;        
+            padding: 10px 15px;    
+            text-decoration: none; 
+            color: #333;           
+        }
+
+        .menu li:hover {
+            background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);  
+        }
+
+        
+        .submenu {
+            list-style: none;      
+            padding: 0;            
+            margin: 0;             
+            display: none;        
+        }
+
+       
+        .submenu li a {
+            display: block;               
+            text-decoration: none;        
+            color: #000;                  
+            background-color: #f0f0f0;    
+            border-bottom: 1px solid #ccc; 
+            font-weight: normal;  
+            padding: 8px 10px 8px 40px;        
+        }
+
+        
+        .submenu li a:hover {
+            background-color: #e0e0e0;    
+        }
+
+       
+        .menu li:hover .submenu {
+            display: block;     }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+       
+        <li>
+            <a href="#">ГЛАВНАЯ</a>
+            <ul class="submenu">
+                <li><a href="#">Главная страница</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </li>
+        
+        <li>
+            <a href="#">ОТДЕЛЫ ПРОДАЖ</a>
+        </li>
+       
+        <li>
+            <a href="#">ПОСТАВЩИКИ</a>
+            <ul class="submenu">
+                <li><a href="#">ООО "Дизайн"</a></li>
+                <li><a href="#">ООО "Арт"</a></li>
+                <li><a href="#">ООО "Фотостиль"</a></li>
+            </ul>
+        </li>
+       
+        <li>
+            <a href="#">НАШИ УСЛУГИ</a>
+        </li>
+        
+        <li>
+            <a href="#">КОНТАКТЫ</a>
+        </li>
+       
+        <li>
+            <a href="#">О НАС</a>
+        </li>
+    </ul>
+</body>
+</html>

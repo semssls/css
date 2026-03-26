@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вертикальное меню</title>
+    <style>
+        /* Убираем отступы */
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Основное меню - убираем маркеры списка */
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+        }
+
+        /* Пункты меню */
+        .menu li {
+            position: relative;
+        }
+
+        /* Ссылки основного меню */
+        .menu li a {
+            display: block;
+            padding: 10px;
+            background: linear-gradient(to bottom, #d0d0d0, #b0b0b0);
+            border: 1px solid #999;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+
+        /* Эффект при наведении на ссылку */
+        .menu li a:hover {
+            background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);
+        }
+
+        /* Выпадающее подменю - скрыто по умолчанию */
+        .submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 180px;
+            display: none;
+        }
+
+        /* Пункты выпадающего меню */
+        .submenu li a {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 8px 10px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .submenu li a:hover {
+            background: #e0e0e0;
+        }
+
+        /* При наведении на пункт с подменю показываем подменю */
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#">ГЛАВНАЯ</a>
+            <ul class="submenu">
+                <li><a href="#">Главная страница</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </li>
+        <li><a href="#">ОТДЕЛЫ ПРОДАЖ</a></li>
+        <li>
+            <a href="#">ПОСТАВЩИКИ</a>
+            <ul class="submenu">
+                <li><a href="#">ООО "Дизайн"</a></li>
+                <li><a href="#">ООО "Арт"</a></li>
+                <li><a href="#">ООО "Фотостиль"</a></li>
+            </ul>
+        </li>
+        <li><a href="#">НАШИ УСЛУГИ</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+        <li><a href="#">О НАС</a></li>
+    </ul>
+</body>
+</html>
